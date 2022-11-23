@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .container {
+        display: flex;
+    }
+    .flex {
+        display: flex;
+    }
+
+    .just {
+        justify-content: center;
+    }
+
+    
+
+    .even {
+        justify-content: space-evenly;
+    }
+
+    .col-left {
+        width: 20rem;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .col-right {
+    width: 100%;
+    overflow-y: scroll;
+    height: 100vh;
+
+    }
+
+    .col {
+        justify-content: space-between;
+    }
+
+    .pad {
+        padding: 15px;
+    }
+
+    .pad-2 {
+        padding: 40px;
+    }
+
+    .pad-0 {
+        padding: 10px;
+    }
+
+    .pd {
+        padding: 5px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .align {
+        align-items: center;
+    }
+
+    .font {
+        font-size: x-large;
+    }
+
+    .mt-3 {
+        margin-top: 30px;
+    }
+
+    .start {
+        justify-content: start;
+    }
+
+    .grow {
+        flex-grow: 1;
+    }
+
+    .mb {
+        margin-bottom: 20px;
+    }
+
+    .mb-2 {
+        margin-bottom: 10px;
+    }
+
+    .search {
+        width: 700px;
+        border: 1px solid;
+        border-radius: 30px;
+    }
+
+    .search input {
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+
+    .around {
+        justify-content: space-around;
+    }
+
+    .round {
+        border-radius: 10px;
+    }
+
+    .w-100 {
+        width: 100px;
+    }
+
+    .outline {
+        outline-style: none;
+    }
+
+    .background {
+        background-color: #e2dfdceb;
+    }
+
+    .bg {
+        background-color: #4b4744eb;
+    }
+
+    .sug {
+        color: #fff;
+    }
+
+    .image {
+            column-count: 3;
+            column-gap: 5px;
+    }
+
+    .size {
+        width: 350px;
+    }
+
+    .small {
+        width: 30px;
+        height: 30px;
+    }
+
+    .circle {
+        border-radius: 50%;
+    }
+
+    .ms {
+        padding-left: 20px;
+    }
+
+    .border {
+        border-radius: 30px;
+    }
+
+    .text {
+        color: rgb(125, 122, 122);
+    }
+    
+</style>
+<body>
+        <div class="container">
+            <div class="col-left">
+
+                <div class="flex pad col">
+                    
+                    
+                        <i class="fas fa-bars"></i>
+                        <div class="">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        <span class="bold font ">YouTube</span>
+                        </div>
+                </div>
+                <div class="mt-3 button">
+                    <div class="pad mb">
+                        <i class="fas fa-home"></i> 
+                        <span class="pad-2">Home</span>
+                    </div>
+                    <div class="pad mb">
+                        <i class="fas fa-film"></i> 
+                        <span class="pad-2">Shorts</span>
+                    </div>
+                    <div class="pad mb">
+                        <i class="fas fa-signal"></i> 
+                        <span class="pad-2">Subscriptions</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="pad mb">
+                        <i class="fas fa-book-open"></i> 
+                        <span class="pad-2">Library</span>
+                    </div>
+                    <div class="pad mb">
+                        <i class="fas fa-history"></i> 
+                        <span class="pad-2">History</span>
+                    </div>
+                    <div class="pad mb">
+                        <i class="fab fa-youtube"></i> 
+                        <span class="pad-2">Your videos</span>
+                    </div>
+                    <div class="pad mb">
+                        <i class="fas fa-clock"></i> 
+                        <span class="pad-2">Watch later</span>
+                    </div>
+                    <div class="pad mb">
+                        <i class="far fa-thumbs-up"></i> 
+                        <span class="pad-2">Liked videos</span>
+                    </div>
+                    <hr>
+
+                    <div class="pad mb">
+                        <i class="fas fa-cog"></i> 
+                        <span class="pad-2">Settings</span>
+                    </div>
+
+                    <div class="pad mb">
+                        <i class="far fa-question-circle"></i> 
+                        <span class="pad-2">Help</span>
+                    </div>
+
+                    <div class="pad mb">
+                        <i class="fas fa-exclamation-circle"></i> 
+                        <span class="pad-2">Feedback</span>
+                    </div>
+                    
+                        
+                        </div>
+
+                </div>
+                <div class="col-right pad">
+                    <div class="flex even">
+                        <div class="flex just">
+                            <div class="flex search pad">
+                                <input type="text" placeholder="Search">
+                                <i class="fas fa-search"></i>
+                        </div>
+                        <i class="fas fa-microphone pad"></i>
+                        <div class="even">
+                            
+                            <i class="fas fa-video pad"></i>
+                            <i class="fas fa-bell pad"></i>
+                            <i class="fas fa-user-circle pad"></i>
+                        </div>
+                        
+                        
+                        </div>
+
+
+                        
+                    </div>
+                    <div class="flex mt-3 even pad">
+                        <div class="bg sug round pad-0 outline">All</div>
+                        <div class="background round pad-0 outline">Mixed</div>
+                        <div class="background round pad-0 outline">Music</div>
+                        <div class="background round pad-0 outline">Variety shows</div>
+                        <div class="background round pad-0 outline">Practice</div>
+                        <div class="background round pad-0 outline">Vocabulary</div>
+                        <div class="background round pad-0 outline">K-pop</div>
+                        <div class="background round pad-0 outline">Korean dramas</div>
+                        <div class="background round pad-0 outline">Words</div>
+                        <div class="background round pad-0 outline">Live</div>
+                        <div class="background round pad-0 outline">Makeup</div>
+                        <div class="background round pad-0 outline">Animated films</div>
+
+                        </div>
+
+                        <div class="image pad">
+                            <div class="">
+                                <img src="https://i.ytimg.com/vi/Y8JFxS1HlDo/maxresdefault.jpg" alt="" class="size pad border">
+                            <div class="flex start">
+                                <img src="https://yt3.ggpht.com/mGIS9352z_O1V5m6rBoV76OTkoj3hsEjY7LL3UKwmoX30PHQe3TX8Uk7bZVxyrBe6uqiyj2YKA=s900-c-k-c0x00ffffff-no-rj" alt="" class="circle small">
+                                
+                                <div class="ms">
+                                <h5 class="mb-2">IVE 아이브 'LOVE DIVE' MV</h5>
+                                <h5 class="text">IVE</h5>
+                               <span class="text">172M views 7months ago</span>
+                               </div>
+                                
+                            </div>
+                            
+                            
+                            </div>
+                            <img src="https://i.ytimg.com/vi/Y8JFxS1HlDo/maxresdefault.jpg" alt="" class="size pad border">
+                            <div class="flex start">
+                                <img src="https://yt3.ggpht.com/mGIS9352z_O1V5m6rBoV76OTkoj3hsEjY7LL3UKwmoX30PHQe3TX8Uk7bZVxyrBe6uqiyj2YKA=s900-c-k-c0x00ffffff-no-rj" alt="" class="circle small">
+                                <div class="ms">
+                                    <h5 class="mb-2">IVE 아이브 'LOVE DIVE' MV</h5>
+                                    <h5 class="text">IVE</h5>
+                                   <span class="text">172M views 7months ago</span>
+                                   </div>
+                            </div>
+                            
+                                
+                            <img src="https://i.ytimg.com/vi/Y8JFxS1HlDo/maxresdefault.jpg" alt="" class="size pad border">
+                            <div class="flex start">
+                                <img src="https://yt3.ggpht.com/mGIS9352z_O1V5m6rBoV76OTkoj3hsEjY7LL3UKwmoX30PHQe3TX8Uk7bZVxyrBe6uqiyj2YKA=s900-c-k-c0x00ffffff-no-rj" alt="" class="circle small">
+                                <div class="ms">
+                                    <h5 class="mb-2">IVE 아이브 'LOVE DIVE' MV</h5>
+                                    <h5 class="text">IVE</h5>
+                                   <span class="text">172M views 7months ago</span>
+                                   </div>
+                            </div>
+                            
+                        </div>
+                        <div class="image">
+                            <img src="https://i.ytimg.com/vi/F0B7HDiY-10/maxresdefault.jpg" alt="" class="size pad border">
+                            <div class="flex start">
+                                <img src="https://yt3.ggpht.com/mGIS9352z_O1V5m6rBoV76OTkoj3hsEjY7LL3UKwmoX30PHQe3TX8Uk7bZVxyrBe6uqiyj2YKA=s900-c-k-c0x00ffffff-no-rj" alt="" class="circle small">
+                                <div class="ms">
+                                    <h5 class="mb-2">IVE 아이브 'AFTER LIKE' MV</h5>
+                                    <h5 class="text">IVE</h5>
+                                   <span class="text">135M views 3months ago</span>
+                                   </div>
+                            </div>
+                            <img src="https://i.ytimg.com/vi/F0B7HDiY-10/maxresdefault.jpg" alt="" class="size pad border">
+                            <div class="flex start">
+                                <img src="https://yt3.ggpht.com/mGIS9352z_O1V5m6rBoV76OTkoj3hsEjY7LL3UKwmoX30PHQe3TX8Uk7bZVxyrBe6uqiyj2YKA=s900-c-k-c0x00ffffff-no-rj" alt="" class="circle small">
+                                <div class="ms">
+                                    <h5 class="mb-2">IVE 아이브 'AFTER LIKE' MV</h5>
+                                    <h5 class="text">IVE</h5>
+                                   <span class="text">135M views 3months ago</span>
+                                   </div>
+                            </div>
+
+                            <img src="https://i.ytimg.com/vi/F0B7HDiY-10/maxresdefault.jpg" alt="" class="size pad border">
+                            <div class="flex start">
+                                <img src="https://yt3.ggpht.com/mGIS9352z_O1V5m6rBoV76OTkoj3hsEjY7LL3UKwmoX30PHQe3TX8Uk7bZVxyrBe6uqiyj2YKA=s900-c-k-c0x00ffffff-no-rj" alt="" class="circle small">
+                                <div class="ms">
+                                    <h5 class="mb-2">IVE 아이브 'AFTER LIKE' MV</h5>
+                                    <h5 class="text">IVE</h5>
+                                   <span class="text">135M views 3months ago</span>
+                                   </div>
+                            </div>
+                        </div>
+                            
+                            
+
+                        
+                    
+                    
+                    
+                    
+                        
+
+                    </div>
+                    
+                
+            
+    
+                    
+
+            </div>
+            
+
+            
+        
+
+    
+</body>
+</html>
